@@ -175,7 +175,8 @@ print({k: v for k, v in sorted(unique.items(), key=lambda item: item[1])});
 
 #####################################################
 # Google Universeral Encoder
-embed = hub.load("/Users/senqiao/Desktop/Recomandation/universal-sentence-encoder_4/");
+# embed = hub.load("/universal-sentence-encoder_4/");
+embed = hub.load("https://tfhub.dev/google/universal-sentence-encoder/1");
 embed_array=embed(unique_array);
 
 
